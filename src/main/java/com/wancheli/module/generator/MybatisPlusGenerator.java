@@ -446,9 +446,9 @@ public class MybatisPlusGenerator {
         // 默认配置为 开发环境 的数据源
         DataSourceConfig.Builder dataSource = new DataSourceConfig
                 .Builder(
-                "jdbc:mysql://192.168.6.182:3306/wancheli-product?serverTimezone=Asia/Shanghai",
+                "jdbc:mysql://192.168.6.175:3306/genrator?serverTimezone=Asia/Shanghai",
                 "u_develop",
-                "Hb28VSeR276M118cpladg")
+                "u_develop")
                 .dbQuery(new MySqlQuery())
                 .typeConvert(new MySqlTypeConvert()).typeConvertHandler((globalConfig, typeRegistry, metaInfo) -> {
                     // 兼容旧版本转换成Integer
@@ -512,9 +512,9 @@ public class MybatisPlusGenerator {
         // 默认配置为 开发环境 的数据源
         DataSourceConfig.Builder dataSource = new DataSourceConfig
                 .Builder(
-                "jdbc:mysql://192.168.6.182:3306/wancheli-product?serverTimezone=Asia/Shanghai",
+                "jdbc:mysql://192.168.6.175:3306/genrator?serverTimezone=Asia/Shanghai",
                 "u_develop",
-                "Hb28VSeR276M118cpladg")
+                "u_develop")
                 .dbQuery(new MySqlQuery())
                 .typeConvert(new MySqlTypeConvert()).typeConvertHandler((globalConfig, typeRegistry, metaInfo) -> {
                     // 兼容旧版本转换成Integer
@@ -627,9 +627,9 @@ public class MybatisPlusGenerator {
         // 默认配置为 开发环境 的数据源
         DataSourceConfig.Builder dataSource = new DataSourceConfig
                 .Builder(
-                "jdbc:mysql://192.168.6.182:3306/wancheli-product?serverTimezone=Asia/Shanghai",
+                "jdbc:mysql://192.168.6.175:3306/genrator?serverTimezone=Asia/Shanghai",
                 "u_develop",
-                "Hb28VSeR276M118cpladg")
+                "u_develop")
                 .dbQuery(new MySqlQuery())
                 .typeConvert(new MySqlTypeConvert()).typeConvertHandler((globalConfig, typeRegistry, metaInfo) -> {
                     // 兼容旧版本转换成Integer
@@ -682,9 +682,9 @@ public class MybatisPlusGenerator {
         // 数据源配置
         DataSourceConfig.Builder dataSource = new DataSourceConfig
                 .Builder(
-                "jdbc:mysql://192.168.6.182:3306/wancheli-product?serverTimezone=Asia/Shanghai",
+                "jdbc:mysql://192.168.6.175:3306/genrator?serverTimezone=Asia/Shanghai",
                 "u_develop",
-                "Hb28VSeR276M118cpladg")
+                "u_develop")
                 .dbQuery(new MySqlQuery())
                 .typeConvert(new MySqlTypeConvert()).typeConvertHandler((globalConfig, typeRegistry, metaInfo) -> {
                     // 兼容旧版本转换成Integer
