@@ -3,7 +3,7 @@ package ${servicePackageName};
 import cn.hutool.core.collection.CollUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.wancheli.framework.common.pojo.PageParam;
+import com.mgxlin.framework.common.pojo.PageParam;
 
 import ${pojoPackageName}.convert.${entity}Convert;
 import ${entityPackageName}.${entity}DO;
@@ -19,7 +19,7 @@ import ${mapperPackageName}.${table.mapperName};
 
 import org.springframework.stereotype.Service;
 import io.swagger.annotations.ApiOperation;
-import com.wancheli.framework.common.pojo.PageResult;
+import com.mgxlin.framework.common.pojo.PageResult;
 
 import javax.annotation.Resource;
 import java.util.List;

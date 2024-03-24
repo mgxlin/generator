@@ -1,6 +1,6 @@
 package ${parentPackagePath};
 
-import com.wancheli.module.generator.Generator;
+import com.mgxlin.module.generator.Generator;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;

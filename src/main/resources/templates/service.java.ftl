@@ -8,7 +8,7 @@ import ${pojoPackageName}.ro.${entity}QueryRO;
 import ${pojoPackageName}.ro.${entity}UpdateRO;
 import ${pojoPackageName}.vo.${entity}VO;
 
-import com.wancheli.framework.common.pojo.PageResult;
+import com.mgxlin.framework.common.pojo.PageResult;
 
 import io.swagger.annotations.ApiOperation;
 import java.util.List;

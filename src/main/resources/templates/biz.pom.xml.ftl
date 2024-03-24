@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.wancheli</groupId>
+        <groupId>com.mgxlin</groupId>
         <artifactId>wancheli-module-${moduleName}</artifactId>
         <version>${"$"}{revision}</version>
     </parent>
@@ -53,87 +53,87 @@
         </dependency>
 
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-env</artifactId>
         </dependency>
 
         <!-- 依赖服务 -->
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-module-${moduleName}-api</artifactId>
             <version>${"$"}{api.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-module-generator</artifactId>
             <version>${"$"}{api.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-module-infra-api</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <!-- 业务组件 -->
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-banner</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-biz-operatelog</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-biz-sms</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-biz-dict</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-biz-data-permission</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-biz-social</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-biz-tenant</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-biz-error-code</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-biz-ip</artifactId>
         </dependency>
 
         <!-- Web 相关 -->
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-security</artifactId>
         </dependency>
 
         <!-- DB 相关 -->
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-mybatis</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-redis</artifactId>
         </dependency>
 
         <!-- RPC 远程调用相关 -->
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-rpc</artifactId>
         </dependency>
 
@@ -162,20 +162,20 @@
 
         <!-- 服务保障相关 TODO ：暂时去掉 -->
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-protection</artifactId>
         </dependency>
 
         <!-- Test 测试相关 -->
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
 
         <!-- 监控相关 -->
         <dependency>
-            <groupId>com.wancheli</groupId>
+            <groupId>com.mgxlin</groupId>
             <artifactId>wancheli-spring-boot-starter-monitor</artifactId>
         </dependency>
 

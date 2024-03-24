@@ -145,8 +145,8 @@ management:
 #logging:
 #  level:
 #    # 配置自己写的 MyBatis Mapper 打印日志
-#    com.wancheli.module.model.dal.mysql: debug
-#    com.wancheli.module.model.controller.admin: debug
+#    com.mgxlin.module.model.dal.mysql: debug
+#    com.mgxlin.module.model.controller.admin: debug
 #  config: classpath:logback-spring.xml
 
 --- #################### 万车利相关配置 ####################

@@ -1,6 +1,6 @@
 package ${controllerPackageName};
 
-import com.wancheli.framework.common.pojo.PageResult;
+import com.mgxlin.framework.common.pojo.PageResult;
 
 import ${pojoPackageName}.ro.${entity}CreateRO;
 import ${pojoPackageName}.ro.${entity}QueryRO;
@@ -9,9 +9,9 @@ import ${pojoPackageName}.vo.${entity}VO;
 
 import ${servicePackageName}.${table.serviceName};
 
-import static com.wancheli.framework.common.pojo.CommonResult.success;
+import static com.mgxlin.framework.common.pojo.CommonResult.success;
 import org.springframework.web.bind.annotation.*;
-import com.wancheli.framework.common.pojo.CommonResult;
+import com.mgxlin.framework.common.pojo.CommonResult;
 
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.PostMapping;

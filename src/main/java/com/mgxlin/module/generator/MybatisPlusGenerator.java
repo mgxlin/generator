@@ -1,4 +1,4 @@
-package com.wancheli.module.generator;
+package com.mgxlin.module.generator;
 
 import com.baomidou.mybatisplus.generator.FastAutoGenerator;
 import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
@@ -10,12 +10,14 @@ import com.baomidou.mybatisplus.generator.config.rules.DbColumnType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import com.baomidou.mybatisplus.generator.keywords.MySqlKeyWordsHandler;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.type.JdbcType;
 
 import java.io.File;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 
+@Slf4j
 public class MybatisPlusGenerator {
 
     // 父级目录 的固定前缀
@@ -55,10 +57,10 @@ public class MybatisPlusGenerator {
         if (lastIndex != -1) {
             // 使用substring方法提取最后一个反斜杠后面的内容
             String result = path.substring(lastIndex + 1);
-            System.out.println("项目名称 == : " + result);
+            log.info("项目名称 == : " + result);
             return result;
         } else {
-            System.out.println("非法项目名称");
+            log.info("非法项目名称");
             return "";
         }
     }
@@ -158,9 +160,9 @@ public class MybatisPlusGenerator {
         String entityName = convertToCamelCase(removePrefixTableName);
 
         // 模块名 首字母大写
-        System.out.println("moduleName====" + moduleName);
+        log.info("moduleName====" + moduleName);
         String capitalizeModuleName = capitalizeFirstLetter(moduleName);
-        System.out.println("capitalizeModuleName====" + capitalizeModuleName);
+        log.info("capitalizeModuleName====" + capitalizeModuleName);
 
         // 自定义路径
         Map<OutputFile, String> customPathInfo = new EnumMap<>(OutputFile.class);
@@ -257,7 +259,7 @@ public class MybatisPlusGenerator {
 
                     consumer.beforeOutputFile((tableInfo, objectMap) -> {
                         tableInfo.setEntityName("");
-                        System.out.println("tableInfo: " + tableInfo.getEntityName() + " objectMap: " + objectMap.size());
+                        log.info("tableInfo: " + tableInfo.getEntityName() + " objectMap: " + objectMap.size());
                     });
 
                     consumer.customFile(new CustomFile.Builder().fileName(entityName+"DO.java").enableFileOverride()
@@ -421,12 +423,12 @@ public class MybatisPlusGenerator {
         String projectName = PARENT_PROJECT_PATH + moduleName;
         // 生成的 项目路径 为 eg:  G:\project\wancheli-module-generator\wancheli-module-model
         projectPath = String.join(File.separator, projectPath, projectName);
-        System.out.println("=========projectPath===========" + projectPath);
+        log.info("=========projectPath===========" + projectPath);
 
         // 获取项目名称 eg:wancheli-module-model
 //        String projectName = getProjectName(projectPath);
 
-        System.out.println("=========projectName===========" + moduleName);
+        log.info("=========projectName===========" + moduleName);
 
         if ("".equals(projectName)) {
             throw new RuntimeException("非法路径");
@@ -438,7 +440,7 @@ public class MybatisPlusGenerator {
         String bizPath = projectName + "-biz";
         // 模块名称
 //        String moduleName = projectName.replace("wancheli-module-", "");
-        System.out.println("=========moduleName===========" + moduleName);
+        log.info("=========moduleName===========" + moduleName);
 
         // 父包路径 eg：com.wancheli.module.model
         String parentPackagePath = PARENT_PACKAGE_PATH + moduleName;
@@ -487,12 +489,12 @@ public class MybatisPlusGenerator {
         String projectName = PARENT_PROJECT_PATH + moduleName;
         // 生成的 项目路径 为 eg:  G:\project\wancheli-module-generator\wancheli-module-model
         projectPath = String.join(File.separator, projectPath, projectName);
-        System.out.println("=========projectPath===========" + projectPath);
+        log.info("=========projectPath===========" + projectPath);
 
         // 获取项目名称 eg:wancheli-module-model
 //        String projectName = getProjectName(projectPath);
 
-        System.out.println("=========projectName===========" + moduleName);
+        log.info("=========projectName===========" + moduleName);
 
         if ("".equals(projectName)) {
             throw new RuntimeException("非法路径");
@@ -504,7 +506,7 @@ public class MybatisPlusGenerator {
         String bizPath = projectName + "-biz";
         // 模块名称
 //        String moduleName = projectName.replace("wancheli-module-", "");
-        System.out.println("=========moduleName===========" + moduleName);
+        log.info("=========moduleName===========" + moduleName);
 
         // 父包路径 eg：com.wancheli.module.model
         String parentPackagePath = PARENT_PACKAGE_PATH + moduleName;
@@ -551,12 +553,12 @@ public class MybatisPlusGenerator {
         String projectName = PARENT_PROJECT_PATH + moduleName;
         // 生成的 项目路径 为 eg:  G:\project\wancheli-module-generator\wancheli-module-model
         projectPath = String.join(File.separator, projectPath, projectName);
-        System.out.println("=========projectPath===========" + projectPath);
+        log.info("=========projectPath===========" + projectPath);
 
         // 获取项目名称 eg:wancheli-module-model
 //        String projectName = getProjectName(projectPath);
 
-        System.out.println("=========projectName===========" + moduleName);
+        log.info("=========projectName===========" + moduleName);
 
         if ("".equals(projectName)) {
             throw new RuntimeException("非法路径");
@@ -568,7 +570,7 @@ public class MybatisPlusGenerator {
         String bizPath = projectName + "-biz";
         // 模块名称
 //        String moduleName = projectName.replace("wancheli-module-", "");
-        System.out.println("=========moduleName===========" + moduleName);
+        log.info("=========moduleName===========" + moduleName);
 
         // 父包路径 eg：com.wancheli.module.model
         String parentPackagePath = PARENT_PACKAGE_PATH + moduleName;
@@ -603,11 +605,11 @@ public class MybatisPlusGenerator {
 
         // 获取项目绝对路径 eg: G:\project\wancheli-module-model
         String projectPath = System.getProperty("user.dir");
-        System.out.println("=========projectPath===========" + projectPath);
+        log.info("=========projectPath===========" + projectPath);
 
         // 获取项目名称 eg:wancheli-module-model
         String projectName = getProjectName(projectPath);
-        System.out.println("=========projectName===========" + projectName);
+        log.info("=========projectName===========" + projectName);
 
         if ("".equals(projectName)) {
             throw new RuntimeException("非法路径");
@@ -619,7 +621,7 @@ public class MybatisPlusGenerator {
         String bizPath = projectName + "-biz";
         // 模块名称
         String moduleName = projectName.replace("wancheli-module-", "");
-        System.out.println("=========moduleName===========" + moduleName);
+        log.info("=========moduleName===========" + moduleName);
 
         // 父包路径 eg：com.wancheli.module.model
         String parentPackagePath = PARENT_PACKAGE_PATH + moduleName;
@@ -658,11 +660,11 @@ public class MybatisPlusGenerator {
         String projectPath = System.getProperty("user.dir");
         File currentDirFile = new File(projectPath);
         projectPath = currentDirFile.getParent();
-        System.out.println("=========projectPath===========" + projectPath);
+        log.info("=========projectPath===========" + projectPath);
 
         // 获取项目名称 eg:wancheli-module-model
         String projectName = getProjectName(projectPath);
-        System.out.println("=========projectName===========" + projectName);
+        log.info("=========projectName===========" + projectName);
 
         if ("".equals(projectName)) {
             throw new RuntimeException("非法路径");
@@ -674,7 +676,7 @@ public class MybatisPlusGenerator {
         String bizPath = projectName + "-biz";
         // 模块名称
         String moduleName = projectName.replace("wancheli-module-", "");
-        System.out.println("=========moduleName===========" + moduleName);
+        log.info("=========moduleName===========" + moduleName);
 
         // 父包路径 eg：com.wancheli.module.model
         String parentPackagePath = PARENT_PACKAGE_PATH + moduleName;

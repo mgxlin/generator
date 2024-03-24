@@ -12,7 +12,7 @@ import lombok.experimental.Accessors;
     </#if>
 </#if>
 
-import com.wancheli.framework.common.pojo.PageParam;
+import com.mgxlin.framework.common.pojo.PageParam;
 
 import java.util.List;
 import java.io.Serializable;

@@ -1,17 +1,14 @@
-package com.wancheli.module.generator;
+package com.mgxlin.module.generator;
 
 import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
-import com.baomidou.mybatisplus.generator.config.converts.MySqlTypeConvert;
-import com.baomidou.mybatisplus.generator.config.querys.MySqlQuery;
-import com.baomidou.mybatisplus.generator.config.rules.DbColumnType;
-import com.baomidou.mybatisplus.generator.keywords.MySqlKeyWordsHandler;
-import org.apache.ibatis.type.JdbcType;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
 import java.util.List;
 
-import static com.wancheli.module.generator.MybatisPlusGenerator.*;
+import static com.mgxlin.module.generator.MybatisPlusGenerator.*;
 
+@Slf4j
 public class Generator {
     public Generator(DataSourceConfig.Builder dataSource) {
         this.dataSource = dataSource;
@@ -28,9 +25,9 @@ public class Generator {
         String projectName = PARENT_PROJECT_PATH + moduleName;
         // 生成的 项目路径 为 eg:  G:\project\wancheli-module-generator\wancheli-module-model
         projectPath = String.join(File.separator, projectPath, projectName);
-        System.out.println("=========projectPath===========" + projectPath);
+        log.info("=========projectPath===========" + projectPath);
 
-        System.out.println("=========projectName===========" + moduleName);
+        log.info("=========projectName===========" + moduleName);
 
         if ("".equals(projectName)) {
             throw new RuntimeException("非法路径");
@@ -41,7 +38,7 @@ public class Generator {
         // biz 层模块名称
         String bizPath = projectName + "-biz";
         // 模块名称
-        System.out.println("=========moduleName===========" + moduleName);
+        log.info("=========moduleName===========" + moduleName);
 
         // 父包路径 eg：com.wancheli.module.model
         String parentPackagePath = PARENT_PACKAGE_PATH + moduleName;
@@ -69,11 +66,11 @@ public class Generator {
         String projectPath = System.getProperty("user.dir");
         File currentDirFile = new File(projectPath);
         projectPath = currentDirFile.getParent();
-        System.out.println("=========projectPath===========" + projectPath);
+        log.info("=========projectPath===========" + projectPath);
 
         // 获取项目名称 eg:wancheli-module-model
         String projectName = getProjectName(projectPath);
-        System.out.println("=========projectName===========" + projectName);
+        log.info("=========projectName===========" + projectName);
 
         if ("".equals(projectName)) {
             throw new RuntimeException("非法路径");
@@ -85,7 +82,7 @@ public class Generator {
         String bizPath = projectName + "-biz";
         // 模块名称
         String moduleName = projectName.replace("wancheli-module-", "");
-        System.out.println("=========moduleName===========" + moduleName);
+        log.info("=========moduleName===========" + moduleName);
 
         // 父包路径 eg：com.wancheli.module.model
         String parentPackagePath = PARENT_PACKAGE_PATH + moduleName;

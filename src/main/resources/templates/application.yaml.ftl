@@ -85,7 +85,7 @@ xxl:
 wancheli:
   info:
     version: 1.0.0
-    base-package: com.wancheli.module.${moduleName}
+    base-package: com.mgxlin.module.${moduleName}
   web:
     admin-ui:
       url: http://dashboard.wancheli.iocoder.cn # Admin 管理后台 UI 的地址
@@ -98,7 +98,7 @@ wancheli:
     enable: true # 验证码的开关，默认为 true；
   error-code: # 错误码相关配置项
     constants-class-list:
-      - com.wancheli.module.demo.enums.ErrorCodeConstants
+      - com.mgxlin.module.demo.enums.ErrorCodeConstants
   tenant: # 多租户相关配置项
     enable: true
     ignore-urls:

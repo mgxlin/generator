@@ -1,6 +1,6 @@
 package ${frameworkPackageName};
 
-import com.wancheli.framework.security.config.AuthorizeRequestsCustomizer;
+import com.mgxlin.framework.security.config.AuthorizeRequestsCustomizer;
 import ${parentPackagePath}.enums.ApiConstants;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

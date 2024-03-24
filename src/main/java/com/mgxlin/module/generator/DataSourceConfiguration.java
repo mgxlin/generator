@@ -1,4 +1,4 @@
-package com.wancheli.module.generator;
+package com.mgxlin.module.generator;
 
 import com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DataSourceProperty;
 import com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties;

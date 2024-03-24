@@ -1,7 +1,7 @@
 package ${apiPackageName};
 
-import com.wancheli.framework.common.exception.enums.GlobalErrorCodeConstants;
-import com.wancheli.framework.common.pojo.CommonResult;
+import com.mgxlin.framework.common.exception.enums.GlobalErrorCodeConstants;
+import com.mgxlin.framework.common.pojo.CommonResult;
 import ${pojoPackageName}.ro.${entity}QueryRO;
 import ${pojoPackageName}.dto.${entity}DTO;
 import org.springframework.cloud.openfeign.FallbackFactory;

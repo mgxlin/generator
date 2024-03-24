@@ -1,6 +1,6 @@
 package ${enumsPackageName};
 
-import com.wancheli.framework.common.enums.RpcConstants;
+import com.mgxlin.framework.common.enums.RpcConstants;
 import io.swagger.annotations.ApiModel;
 
 @ApiModel(value = "${table.comment!}")

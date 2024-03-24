@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableFeignClients(basePackages = "com.wancheli.module")
+@EnableFeignClients(basePackages = "com.mgxlin.module")
 public class ${capitalizeModuleName}ServerApplication {
 
     public static void main(String[] args) {

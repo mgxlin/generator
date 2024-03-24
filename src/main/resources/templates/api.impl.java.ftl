@@ -8,7 +8,7 @@ import ${apiPackageName}.${entity}Api;
 import ${servicePackageName}.${table.serviceName};
 
 import org.springframework.web.bind.annotation.*;
-import com.wancheli.framework.common.pojo.CommonResult;
+import com.mgxlin.framework.common.pojo.CommonResult;
 
 import io.swagger.annotations.ApiOperation;
 

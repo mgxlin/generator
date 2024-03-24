@@ -5,7 +5,7 @@ import ${pojoPackageName}.ro.${entity}QueryRO;
 import ${pojoPackageName}.dto.${entity}DTO;
 
 import org.springframework.web.bind.annotation.*;
-import com.wancheli.framework.common.pojo.CommonResult;
+import com.mgxlin.framework.common.pojo.CommonResult;
 import io.swagger.annotations.Api;
 import org.springframework.cloud.openfeign.FeignClient;
 import io.swagger.annotations.ApiOperation;
